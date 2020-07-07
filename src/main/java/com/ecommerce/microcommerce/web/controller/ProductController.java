@@ -58,7 +58,7 @@ public class ProductController {
     //Trier les produits par ordre alphabétique
     @RequestMapping(value = "/ProduitsAlpha", method = RequestMethod.GET)
     public List<Product> trierProduitsParOrdreAlphabetique() {
-    	return null;
+    	return productDao.findAllByOrderByNom();
     }
 
 
