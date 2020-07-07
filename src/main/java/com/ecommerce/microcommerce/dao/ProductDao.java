@@ -12,6 +12,8 @@ import java.util.List;
 public interface ProductDao extends JpaRepository<Product, Integer> {
 	
 	List<Product> findAll();
+	
+	List<Product> findAllByOrderByNom();
 
     Product findById(int id);
 
